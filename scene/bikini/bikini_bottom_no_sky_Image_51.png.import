@@ -1,0 +1,38 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bgh6tx8mk0dih"
+path.s3tc="res://.godot/imported/bikini_bottom_no_sky_Image_51.png-262b8265a273b81326719a6d794305e6.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "62b3f85e316792a7e6bdd63f9061592d"
+}
+
+[deps]
+
+source_file="res://scene/bikini/bikini_bottom_no_sky_Image_51.png"
+dest_files=["res://.godot/imported/bikini_bottom_no_sky_Image_51.png-262b8265a273b81326719a6d794305e6.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0
