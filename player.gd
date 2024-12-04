@@ -7,6 +7,7 @@ const JUMP_VELOCITY = 4
 @onready var neck := $neck
 @onready var camera := $neck/Camera3D
 @onready var anim_player = $AnimationPlayer
+@onready var hitbox = $neck/Camera3D/WeaponPivot/MeshInstance3D/hitbox
 
 func _unhandled_input(event):
 	if event is InputEventMouseButton:
@@ -22,6 +23,7 @@ func _unhandled_input(event):
 func _process(delta):
 	if Input.is_action_just_pressed("attack"):
 		anim_player.play("attack")
+		hitbox.monitoring = true
 
 
 
@@ -51,3 +53,12 @@ func _physics_process(delta: float) -> void:
 func _on_animation_player_animation_finished(anim_name: StringName) -> void:
 	if anim_name == "attack":
 		anim_player.play("idle")
+		hitbox.monitoring = false
+
+
+func _on_enemy_hitbox_body_shape_entered(body_rid: RID, body: Node3D, body_shape_index: int, local_shape_index: int) -> void:
+	print("enemy hit")
+
+
+func _on_enemy_hitbox_area_entered(area: Area3D) -> void:
+	print("enemy hit")

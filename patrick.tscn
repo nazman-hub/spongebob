@@ -98,6 +98,9 @@ bones/60/rotation = Quaternion(-0.668692, -3.69474e-05, 3.73423e-05, 0.743539)
 bones/61/rotation = Quaternion(0.736991, 3.04934e-05, 2.59305e-05, 0.675903)
 bones/62/rotation = Quaternion(2.00607e-06, -8.51514e-11, -4.50001e-05, 1)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="2"]
+[node name="Area3D" type="Area3D" parent="." index="2"]
 transform = Transform3D(2.035, 0, 0, 0, 1.51, 0, 0, 0, 2.015, 0, 1.23587, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("CapsuleShape3D_7w635")
