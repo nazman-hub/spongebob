@@ -1,0 +1,307 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 1156,
+      "max": [
+        92.79906463623047,
+        143.332275390625,
+        15.052637100219727
+      ],
+      "min": [
+        -92.79906463623047,
+        -474.47125244140625,
+        -15.052637100219727
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 13872,
+      "componentType": 5126,
+      "count": 1156,
+      "max": [
+        1.0,
+        1.0,
+        0.9999069571495056
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -0.9999069571495056
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 1156,
+      "max": [
+        1.1853716373443604,
+        1.190035343170166
+      ],
+      "min": [
+        -0.18537068367004395,
+        -0.19003677368164063
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 5460,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 27744,
+      "componentType": 5126,
+      "count": 2059,
+      "max": [
+        84.9053726196289,
+        133.4653778076172,
+        -9.663651466369629
+      ],
+      "min": [
+        -84.90538024902344,
+        -118.88298034667969,
+        -299.98883056640625
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 52452,
+      "componentType": 5126,
+      "count": 2059,
+      "max": [
+        0.9996547698974609,
+        0.9993430972099304,
+        0.9999821186065674
+      ],
+      "min": [
+        -0.9996547698974609,
+        -1.0,
+        -0.9999853372573853
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 9248,
+      "componentType": 5126,
+      "count": 2059,
+      "max": [
+        0.9939961433410645,
+        1.023571252822876
+      ],
+      "min": [
+        -0.1200019046664238,
+        -4.8642108119167915e-09
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 21840,
+      "componentType": 5125,
+      "count": 9369,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Anthony Yanez (https://sketchfab.com/paulyanez)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/jellyfish-net-spongebob-30e08be02db047a39882403e48694c58",
+      "title": "JellyFish Net (Spongebob)"
+    },
+    "generator": "Sketchfab-12.66.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 59316,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 25720,
+      "byteOffset": 59316,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 77160,
+      "byteOffset": 85036,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 162196,
+      "uri": "scene.bin"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "02_-_Default",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.49411799999999956,
+          0.3254899999999997,
+          0.0,
+          1.0
+        ],
+        "metallicFactor": 0.5,
+        "roughnessFactor": 0.5531631097560975
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "03_-_Default",
+      "pbrMetallicRoughness": {
+        "metallicFactor": 0.6419588414634148,
+        "roughnessFactor": 0.589748475609756
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Jelly Fish Net_02 - Default_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Jelly Fish Net_03 - Default_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 5,
+            "POSITION": 4,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "d0392e5e158042298d8791ff135794d8.fbx"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4,
+        5
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0492354697124335,
+        -0.18500831043387247,
+        0.0,
+        0.0,
+        0.17364798469131149,
+        0.9848077870389967,
+        0.0,
+        0.0,
+        192.31460571289063,
+        -28.713409423828125,
+        1.0
+      ],
+      "name": "Jelly Fish Net"
+    },
+    {
+      "mesh": 0,
+      "name": "Jelly Fish Net_02 - Default_0"
+    },
+    {
+      "mesh": 1,
+      "name": "Jelly Fish Net_03 - Default_0"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}
