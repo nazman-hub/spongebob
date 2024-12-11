@@ -1,7 +1,12 @@
-[gd_scene load_steps=33 format=3 uid="uid://csl2esijbysyl"]
+[gd_scene load_steps=39 format=3 uid="uid://csl2esijbysyl"]
 
 [ext_resource type="Script" path="res://scenes/enemy.gd" id="1_835vm"]
+[ext_resource type="AudioStream" uid="uid://doog43qu4wtbt" path="res://audio/wav/Mixdown.wav" id="3_g3ctk"]
 [ext_resource type="PackedScene" uid="uid://cctxqnv2gsffe" path="res://data/patrick_rig/patrick_rig.glb" id="3_w82ab"]
+[ext_resource type="AudioStream" uid="uid://b37ujh0fe3818" path="res://audio/wav/Mixdown(2).wav" id="4_nxdsq"]
+[ext_resource type="AudioStream" uid="uid://w8m18hobdh66" path="res://audio/wav/Mixdown(3).wav" id="5_bti6u"]
+[ext_resource type="AudioStream" uid="uid://gy6jv8cwpby7" path="res://audio/wav/Mixdown(4).wav" id="6_uqmd8"]
+[ext_resource type="AudioStream" uid="uid://dc3vcwmnn31xk" path="res://audio/wav/Mixdown(5).wav" id="7_hqovw"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_6fwmk"]
 
@@ -17170,6 +17175,14 @@ _data = {
 "patrick_jjk_patrick_skeleton|Walk (Pick up)": SubResource("Animation_5gc0a")
 }
 
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_eu3c6"]
+streams_count = 5
+stream_0/stream = ExtResource("3_g3ctk")
+stream_1/stream = ExtResource("4_nxdsq")
+stream_2/stream = ExtResource("5_bti6u")
+stream_3/stream = ExtResource("6_uqmd8")
+stream_4/stream = ExtResource("7_hqovw")
+
 [node name="Enemy" type="CharacterBody3D" groups=["enemies"]]
 script = ExtResource("1_835vm")
 
@@ -17281,5 +17294,8 @@ libraries = {
 }
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+stream = SubResource("AudioStreamRandomizer_eu3c6")
 
 [editable path="Node3D/Sketchfab_Scene"]

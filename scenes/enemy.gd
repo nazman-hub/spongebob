@@ -2,6 +2,7 @@ extends CharacterBody3D
 
 @onready var animation = $Node3D/Sketchfab_Scene/AnimationPlayer
 @onready var nav_agent = $NavigationAgent3D
+@onready var audio = $AudioStreamPlayer3D
 
 var SPEED = 0.8
 func _physics_process(delta: float) -> void:
@@ -28,12 +29,15 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
-
+func playAudio():
+	audio.play()
+		
 func setStateIdle():
 	animation.play("patrick_jjk_patrick_skeleton|Walk", 0.1)
 	
 func hurt():
 	animation.play("patrick_jjk_patrick_skeleton|Death 2", 0.1)
+	playAudio()
 	
 func walk():
 	animation.play("patrick_jjk_patrick_skeleton|Walk", 0.1)

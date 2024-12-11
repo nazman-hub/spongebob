@@ -61,12 +61,6 @@ func _physics_process(delta: float) -> void:
 
 
 	move_and_slide()
-
-
-
-
-
-
 	
 func attack():
 	var enemies = $neck/Camera3D/hitbox.get_overlapping_bodies()
