@@ -194,6 +194,7 @@ script = ExtResource("1_bfboi")
 
 [node name="Camera3D" type="Camera3D" parent="neck"]
 transform = Transform3D(1.94175, 0, 0, 0, 1.94175, 0, 0, 0, 1.94175, 0, 0, 0)
+far = 96.88
 
 [node name="WeaponPivot" type="Node3D" parent="neck/Camera3D"]
 

@@ -1,12 +1,13 @@
 extends CharacterBody3D
 
 
-const SPEED = 2.0
-const JUMP_VELOCITY = 4
+var SPEED = 2.0
+var JUMP_VELOCITY = 4
 
 @onready var neck := $neck
 @onready var camera := $neck/Camera3D
 @onready var anim_player = $AnimationPlayer
+
 
 
 func _unhandled_input(event):
@@ -23,6 +24,8 @@ func _unhandled_input(event):
 func _process(delta):
 	if Input.is_action_just_pressed("attack"):
 		anim_player.play("attack", 0.05)
+	
+	
 		
 func playIdle():
 	anim_player.play("idle", 0.05)
@@ -49,6 +52,13 @@ func _physics_process(delta: float) -> void:
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.z = move_toward(velocity.z, 0, SPEED)
+	if Input.is_action_pressed("sprint"):
+		SPEED = 6.0
+		JUMP_VELOCITY = 6
+	else:
+		SPEED = 2.0
+		JUMP_VELOCITY = 4
+
 
 	move_and_slide()
 
