@@ -1,0 +1,222 @@
+[gd_scene load_steps=10 format=3 uid="uid://bm4uao0pf3ype"]
+
+[ext_resource type="Script" path="res://player.gd" id="1_bfboi"]
+[ext_resource type="PackedScene" uid="uid://bovxexv6k7hgg" path="res://data/jellyfish_net_spongebob/scene.gltf" id="2_q0bpo"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_t8e5m"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_3jq8r"]
+points = PackedVector3Array(-0.125207, -0.532801, -0.480507, 0.0227831, 0.47607, 0.498884, 0.169713, 0.559144, 0.464172, 0.231051, -0.803591, 0.320455, 0.40741, 0.651043, -0.243523, -0.482789, 0.594843, 0.0822132, -0.362868, -0.682312, 0.289697, 0.469044, -0.654529, -0.0662713, -0.127444, 0.842701, -0.338103, -0.393435, -0.683942, -0.244717, 0.438255, 0.623309, 0.200849, 0.0841477, 0.977454, 0.114795, -0.0682023, -0.976458, -0.12927, 0.20055, -0.563129, -0.451454, -0.185527, 0.595453, -0.453475, -0.273363, 0.592268, 0.407754, -0.00693649, -0.476823, 0.49966, 0.375821, -0.588614, 0.316955, 0.111579, 0.563059, -0.481177, -0.41725, 0.527866, -0.270497, -0.484546, -0.596972, -0.0665097, -0.279747, 0.908561, 0.0533361, -0.250197, -0.880712, 0.205319, 0.263647, -0.902771, -0.127394, 0.293368, 0.871526, -0.157196, 0.373412, -0.526319, -0.328246, 0.499663, 0.476641, -0.00688856, 0.0531056, 0.875001, 0.324703, -0.154543, -0.590854, 0.465879, -0.0972799, -0.782358, -0.398188, -0.387649, -0.498171, 0.31565, -0.30068, -0.587995, -0.388901)
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_880eh"]
+
+[sub_resource type="Animation" id="Animation_jngrs"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("neck/Camera3D/WeaponPivot:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("neck/Camera3D/WeaponPivot:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("neck/Camera3D/WeaponPivot/WeaponObj:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0.366519, -2.72271, 0.813323)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("neck/Camera3D/WeaponPivot/WeaponObj:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0.217, -0.064, -0.213999)]
+}
+
+[sub_resource type="Animation" id="Animation_smya6"]
+resource_name = "attack"
+length = 0.172
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("neck/Camera3D/WeaponPivot:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(-0.5),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("neck/Camera3D/WeaponPivot:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.0452065, 0.103847),
+"transitions": PackedFloat32Array(-0.5, -0.5, -0.5),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 0.741765, 0), Vector3(-0.436332, 1.26536, -0.462512)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("neck/Camera3D/WeaponPivot/WeaponObj:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.0452065, 0.103847),
+"transitions": PackedFloat32Array(-0.5, -0.5, -0.5),
+"update": 0,
+"values": [Vector3(0.366519, -2.72271, 0.813323), Vector3(0.925025, -2.93215, 0.342085), Vector3(1.27409, -2.32129, 0.342085)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("neck/Camera3D/WeaponPivot/WeaponObj:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(-0.5),
+"update": 0,
+"values": [Vector3(0.217, -0.064, -0.213999)]
+}
+tracks/4/type = "method"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath(".")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.0666667, 0.113824),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [],
+"method": &"attack"
+}, {
+"args": [],
+"method": &"playIdle"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_p2q8q"]
+resource_name = "attack"
+length = 0.069
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("neck/Camera3D/WeaponPivot:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(-0.5),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("neck/Camera3D/WeaponPivot:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(-0.5),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("neck/Camera3D/WeaponPivot/WeaponObj:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(-0.5),
+"update": 0,
+"values": [Vector3(0.366519, -2.72271, 0.813323)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("neck/Camera3D/WeaponPivot/WeaponObj:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(-0.5),
+"update": 0,
+"values": [Vector3(0.217, -0.064, -0.213999)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_lkfpp"]
+_data = {
+"RESET": SubResource("Animation_jngrs"),
+"attack": SubResource("Animation_smya6"),
+"idle": SubResource("Animation_p2q8q")
+}
+
+[node name="CharacterBody3D" type="CharacterBody3D"]
+transform = Transform3D(0.515, 0, 0, 0, 0.355, 0, 0, 0, 0.515, 0, 0, 0)
+script = ExtResource("1_bfboi")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_t8e5m")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_3jq8r")
+
+[node name="neck" type="Node3D" parent="."]
+
+[node name="Camera3D" type="Camera3D" parent="neck"]
+transform = Transform3D(1.94175, 0, 0, 0, 1.94175, 0, 0, 0, 1.94175, 0, 0, 0)
+
+[node name="WeaponPivot" type="Node3D" parent="neck/Camera3D"]
+
+[node name="WeaponObj" parent="neck/Camera3D/WeaponPivot" instance=ExtResource("2_q0bpo")]
+transform = Transform3D(-0.337452, 0.259259, -0.174673, 0.312025, 0.295068, -0.164849, 0.0191345, -0.239416, -0.392318, 0.217, -0.064, -0.213999)
+
+[node name="hitbox" type="Area3D" parent="neck/Camera3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="neck/Camera3D/hitbox"]
+transform = Transform3D(0.275, 0, 0, 0, 0.275, 0, 0, 0, 0.275, 0, 0, -0.47)
+shape = SubResource("SphereShape3D_880eh")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_lkfpp")
+}
