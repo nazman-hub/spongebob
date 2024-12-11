@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://drptrysegqohu"
-path="res://.godot/imported/spongebob.png-50d0f2bbb2ae332cb7f3fbaf0b56931c.ctex"
+path="res://.godot/imported/spongebob.png-87220ec952f386a5ea13ae57d5af04ce.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://export/spongebob.png"
-dest_files=["res://.godot/imported/spongebob.png-50d0f2bbb2ae332cb7f3fbaf0b56931c.ctex"]
+source_file="res://docs/spongebob.png"
+dest_files=["res://.godot/imported/spongebob.png-87220ec952f386a5ea13ae57d5af04ce.ctex"]
 
 [params]
 
